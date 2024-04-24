@@ -1,0 +1,220 @@
+body {
+    background-color: rgb(178, 172, 136); /* Sage Green Background */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    background: url(background2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #634343;
+    color: #161616; 
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links ul li {
+    margin: 0 10px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #141414; 
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px; /* Add spacing between logo and title */
+}
+
+.title {
+    margin: 0; /* Reset margin to remove default margin */
+}
+
+main {
+    padding: 20px;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Space out the photos evenly across the container */
+}
+
+.photo {
+    flex: 0 0 calc(33.33% - 20px); /* Each photo takes up 1/3 of the container width with 20px margin on each side */
+    margin: 10px;
+    text-align: center;
+}
+
+.photo img {
+    width: 75%; /* Make the image fill the entire space of its container */
+    height: auto;
+}
+
+.photo .info {
+    margin-top: 20px;
+    color: #0e0d0d;
+}
+
+.photo .info h3 {
+    margin: 0;
+
+}
+
+.photo .info p {
+    margin: 10px 0;
+
+}
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+    .photo {
+        flex-basis: calc(50% - 20px); /* Each photo takes up 50% of the container width with 20px margin on each side */
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .photo {
+        flex-basis: calc(100% - 20px); /* Each photo takes up 100% of the container width with 20px margin on each side */
+    }
+}
+
+/* styles.css */
+
+.quote {
+    text-align: center;
+    margin-bottom: 20px; /* Adjust spacing between the quote and the photo gallery */
+}
+
+.quote p {
+    font-style: oblique;
+    font-size: 20px;
+}
+
+#bio {
+    text-align: center;
+    color: rgb(8, 8, 8);
+    font-size: 40px;
+    font-style: oblique;
+}
+
+
+#contact {
+    text-align: center;
+    color: rgb(8, 8, 8); /* Set the text color to white */
+    font-size: 55px;
+}
+
+a {
+    color: #fff; /* Set the link color to white */
+    text-decoration: none; /* Remove the underline from the links */
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container {
+    width: 315px; /* Adjust as needed to make each container a square */
+    height: 315px; /* Same height as width to make it a square */
+    margin-right: 20px; /* Adjust spacing between videos */
+}
+
+.video-container:last-child {
+    margin-right: 0; /* Remove right margin for the last video container */
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    color: white;
+}
+
+
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}

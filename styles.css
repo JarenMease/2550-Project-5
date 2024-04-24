@@ -1,0 +1,174 @@
+/* General Styles */
+body {
+    background-color: rgb(180, 172, 172); /* Light gray background color */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    background: rgba(0, 0, 0, 0.5) url(https://images.unsplash.com/photo-1571847490051-491c12ff6540?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Add the following CSS to your styles.css file */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+}
+
+.logo-container {
+    width: auto;
+}
+
+.logo img {
+    height: 50px; /* Adjust height as needed */
+    width: auto;
+}
+
+/* styles.css */
+
+.title {
+    text-align: center; /* Center the title */
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Center align the child elements horizontally */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox to align the list items horizontally */
+    flex-wrap: wrap; /* Allow the list items to wrap to the next line on smaller screens */
+    justify-content: center; /* Center align the list items horizontally */
+}
+
+nav ul li {
+    margin: 10px; /* Add some spacing around each list item */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* White text color for navigation links */
+}
+
+main {
+    padding: 20px;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Space out the photos evenly across the container */
+}
+
+.photo {
+    flex: 0 0 calc(33.33% - 20px); /* Each photo takes up 1/3 of the container width with 20px margin on each side */
+    margin: 10px;
+    text-align: center;
+}
+
+.photo img {
+    width: 75%; /* Make the image fill the entire space of its container */
+    height: auto;
+}
+
+.photo .info {
+    margin-top: 20px;
+    color: white;
+}
+
+.photo .info h3 {
+    margin: 0;
+}
+
+.photo .info p {
+    margin: 10px 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+    .photo {
+        flex-basis: calc(50% - 20px); /* Each photo takes up 50% of the container width with 20px margin on each side */
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .photo {
+        flex-basis: calc(100% - 20px); /* Each photo takes up 100% of the container width with 20px margin on each side */
+    }
+}
+
+/* styles.css */
+
+.quote {
+    text-align: center;
+    margin-bottom: 20px; /* Adjust spacing between the quote and the photo gallery */
+}
+
+.quote p {
+    font-style: italic;
+    font-size: 20px;
+}
+
+#bio {
+    text-align: center;
+    color: white; /* Set the text color to white */
+    font-size: 40px;
+}
+
+
+#contact {
+    text-align: center;
+    color: white; /* Set the text color to white */
+    font-size: 40px;
+}
+
+a {
+    color: #fff; /* Set the link color to white */
+    text-decoration: none; /* Remove the underline from the links */
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container {
+    width: 315px; /* Adjust as needed to make each container a square */
+    height: 315px; /* Same height as width to make it a square */
+    margin-right: 20px; /* Adjust spacing between videos */
+}
+
+.video-container:last-child {
+    margin-right: 0; /* Remove right margin for the last video container */
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    color: white;
+}
+
+
+
+
+
+
+  
+  

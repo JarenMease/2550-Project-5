@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="registration2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Logo">
+            </div>
+        </div>
+        <h1 class="title">Sawtooth Ridge Adventures</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html" class="external-link">Home</a></li>
+                <li><a href="biography.html" class="external-link">Biography</a></li>
+                <li><a href="reviews.html" class="external-link">Reviews</a></li>
+                <li><a href="contact.html" class="external-link">Contact</a></li>
+                <li><a href="youtube.html" class="external-link">YouTube</a></li>
+                <li><a href="registration.html" class="external-link">Registration</a></li>
+                <li><button id="toggle-button">Toggle Theme</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+          <h1>Visitor Form</h1>
+          <div id="successMessage" class="successMsg">
+            Thank you for logging your visit!
+          </div>
+          <hr>
+          <form id="myform" novalidate method="GET">
+            <ul class="flex">
+              <li class="section-display">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Enter your first name here">
+                <div class="errorMsg"></div>
+              </li>
+              <li >
+                <label for="last-name">Last Name</label>
+                <input type="text"  id="last-name" name="last-name" placeholder="Enter your last name here">
+                <div class="errorMsg"></div>
+              </li>
+              <li >
+                <label for="address">Address</label>
+                <input type="text"  id="address" name="address" placeholder="Enter your address here">
+                <div class="errorMsg"></div>
+              </li>
+              <li >
+                <label for="city">City</label>
+                <input type="text"  id="city" name="city" placeholder="Enter your city here">
+                <div class="errorMsg"></div>
+              </li>
+              <li >
+                <label for="state">State</label>
+                <input type="text"  id="state" name="state" placeholder="Enter your state here">
+                <div class="errorMsg"></div>
+              </li>
+              <li >
+                <label for="zip">Zip</label>
+                <input type="text"  id="zip" name="zip" placeholder="Enter your zip code here">
+                <div class="errorMsg"></div>
+              </li>
+              <li >
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email here">
+                <div class="errorMsg"></div>
+              </li>
+              <li>
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" placeholder="Enter your phone here">
+                <div class="errorMsg"></div>
+              </li>
+              <li>
+                <h2>How did you find my page</h2>
+              </li>
+              <li>
+                <input type="checkbox" id='google' name='find-page' value="google">
+                <label for="google">Google Search</label>
+              </li>
+              <li>
+                <input type="checkbox" id='friend' name='find-page' value="friend">
+                <label for="friend">Friend</label>
+              </li>
+              <li>
+                <input type="checkbox" id='newspaper' name='find-page' value="newspaper">
+                
+                <label for="newspaper">News Paper</label>
+                <div class="errorMsg"></div>
+              </li>
+              
+              <li>
+                <label for="comment">Comments</label>
+                <textarea rows="4" id="comment" placeholder="Enter your comments here"></textarea>
+              </li>
+              
+              <li>
+                <button type="submit">Send</button>
+              </li>
+            </ul>
+          </form>
+        </hr>
+          </div>
+    </main>
+
+<footer>
+    <p>&copy; 2024 Your Website. All rights reserved.</p>
+</footer>
+    
+<script src="script.js"></script>
+<script src="validation.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    background-color: rgb(180, 172, 172); /* Light gray background color */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    background: rgba(0, 0, 0, 0.5) url(https://images.unsplash.com/photo-1571847490051-491c12ff6540?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Add the following CSS to your styles.css file */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+}
+
+.logo-container {
+    width: auto;
+}
+
+.logo img {
+    height: 50px; /* Adjust height as needed */
+    width: auto;
+}
+
+/* styles.css */
+
+.title {
+    text-align: center; /* Center the title */
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Center align the child elements horizontally */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox to align the list items horizontally */
+    flex-wrap: wrap; /* Allow the list items to wrap to the next line on smaller screens */
+    justify-content: center; /* Center align the list items horizontally */
+}
+
+nav ul li {
+    margin: 10px; /* Add some spacing around each list item */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* White text color for navigation links */
+}
+
+
+
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+
+.successMsg {
+    display: none; /* Hide the success message by default */
+    background-color: #dff0d8; /* Background color */
+    color: #3c763d; /* Text color */
+    border: 1px solid #d6e9c6; /* Border color */
+    padding: 10px; /* Padding */
+    margin-top: 10px; /* Top margin */
+    border-radius: 5px; /* Border radius */
+  }
+
+
+.errorMsg {
+    color: red;
+  }
+  /*only show error information when 'was-validated' class is added to the input*/
+input.was-validated:invalid {
+    color: red;
+    border: 1px solid red;
+  }
+  
+input.was-validated:invalid ~ div {
+    display: block;
+  }
+  /* hide all error divs 
+  ~ is the general sibling selector and selects 'div' siblings of the input*/
+input:valid ~ div {
+    display: none;
+  }
+  
+input:invalid ~ div {
+    display: none;
+  }
+  
+  
